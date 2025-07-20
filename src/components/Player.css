@@ -1,7 +1,7 @@
 @import '../index.css';
 .player-main-div {
     background-color: rgba(var(--BACKGROUND_COLOR), 0.84);
-    color: green;
+
 
     display: flex;
     flex-direction: column;
@@ -14,11 +14,26 @@
 
     filter: drop-shadow(0 0.3125em 0.125em rgba(0, 0, 0, 0.4));
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .player-top-name{
-    font-family: 'MonumentExtended-Regular', "Comic Sans MS";
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     font-size: 0.95vw;
+    order: 1;
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 0.45vw;
+    color: rgba(var(--CT_COLOR), 1.0);
+}
+
+
+
+.player-top-weapon{
+    order: 2;
+
+
 }
 
 .player-middle-div{
