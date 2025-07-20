@@ -1,7 +1,6 @@
 @import '../index.css';
 .player-main-div {
-    opacity: 0.84;
-    background-color: var(--BACKGROUND_COLOR, red);
+    background-color: rgba(var(--BACKGROUND_COLOR), 0.84);
     color: green;
 
     display: flex;
@@ -10,9 +9,16 @@
 }
 
 .player-top-div{
-    opacity: 0.88;
-    background-color: var(--BACKGROUND_COLOR);
+    background-color: rgba(var(--BACKGROUND_COLOR), 0.88);
+
+
     filter: drop-shadow(0 0.3125em 0.125em rgba(0, 0, 0, 0.4));
+    display: flex;
+}
+
+.player-top-name{
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS";
+    font-size: 0.95vw;
 }
 
 .player-middle-div{
@@ -20,6 +26,6 @@
 }
 
 .player-hp-div{
-    background-color: var(--CT_COLOR);
-    opacity: 0.48;
+    background-color: rgb(var(--CT_COLOR));
+
 }

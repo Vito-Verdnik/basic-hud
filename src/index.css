@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'MonumentExtended-Regular';
+  src: url('/fonts/MonumentExtended-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -11,9 +20,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --CT_COLOR: #49bfb1;
-  --T_COLOR : #ecb100;
-  --BACKGROUND_COLOR: #1e2236;
+  --BACKGROUND_COLOR: 30, 34, 54;
+  --T_COLOR : 236, 177, 0;
+  --CT_COLOR: 73 191 177;
 }
 
 a {
