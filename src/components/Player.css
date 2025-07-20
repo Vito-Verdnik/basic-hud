@@ -1,0 +1,25 @@
+@import '../index.css';
+.player-main-div {
+    opacity: 0.84;
+    background-color: var(--BACKGROUND_COLOR, red);
+    color: green;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.player-top-div{
+    opacity: 0.88;
+    background-color: var(--BACKGROUND_COLOR);
+    filter: drop-shadow(0 0.3125em 0.125em rgba(0, 0, 0, 0.4));
+}
+
+.player-middle-div{
+    background-color: transparent;
+}
+
+.player-hp-div{
+    background-color: var(--CT_COLOR);
+    opacity: 0.48;
+}
