@@ -16,29 +16,58 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .player-top-name{
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
-    font-size: 0.95vw;
     order: 1;
-    flex-grow: 1;
     text-align: left;
     padding-left: 0.45vw;
     margin-top: 0.2vw;
     color: rgba(var(--CT_COLOR), 1.0);
+    flex-shrink:2;
+    font-size: 0.95vw;
 }
 
 
 
-.player-top-weapon{
+.player-top-weapon-div{
     order: 2;
 
+    width: 6vw;
+    /*TODO: FIX SVGs and add a correct padding inside*/
+    display: flex;
+    align-items: center;
+    margin-right: 0.15vw;
+    flex-shrink: 0;
 
+}
+
+.player-top-weapon{
+    object-fit: contain;
 }
 
 .player-middle-div{
     background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.player-middle-armor-div{
+    display:flex;
+    align-items: center;
+}
+
+.player-middle-armor{
+    fill: rgba(var(--CT_COLOR), 1.0);
+    object-fit: contain;
+    width: 0.9vw;
+    padding: 0.1vw;
+    margin-left: 0.3vw;
+    margin-top: 0.1vw;
+    margin-bottom: 0.1vw;
 }
 
 .player-hp-div{
