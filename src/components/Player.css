@@ -1,5 +1,6 @@
 @import '../index.css';
 .player-main-div {
+
     background-color: rgba(var(--BACKGROUND_COLOR), 0.84);
     background-image: url('../assets/images/ESZS_Pattern_Opacity.png');
     background-repeat: repeat;
@@ -7,12 +8,22 @@
     /* ... other styles ... */
     /*border: none; Remove the border */
     /* outline: 0.2vw solid white;  Use outline instead */
+    /*outline: 0.2vw solid white;*/
+   /* box-shadow:
+         /*   0.2vw 0 0 white,   /* left */
+    /*   0   -0.2vw 0 white, /* top */
+    /*     0    0.2vw 0 white, /* bottom */
+        /*-0.01vw 0 0 white;/* left */
 
 
 
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+
 
 }
 
@@ -86,7 +97,10 @@
 }
 
 .player-hp-div{
-    background-color: rgb(var(--CT_COLOR));
+    background-color: rgba(var(--CT_COLOR), 0.5);
+    position: relative;
+    overflow: hidden;
+
 
 }
 
@@ -163,4 +177,153 @@
 
 .player-middle-equipment-div{
     order: 5;
+}
+
+.player-hp-bar{
+    position: relative;
+    left: 0;
+    height: 100%;
+    background-color: rgba(var(--CT_COLOR), 1.0);
+    z-index: 1;
+    flex-shrink: 0;
+}
+.player-hp-indicator{
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    width: 100%;
+    margin-left: 0.3vw;
+}
+
+.player-hp-indicator-text{
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
+    margin-top: 0.09vw;
+    font-size: 1.2vw;
+    margin-left: 0.3vw;
+}
+
+.player-hp-indicator-icon{
+    fill: white;
+}
+
+.player-hp-indicator-icon,
+.player-hp-indicator-text,
+.player-hp-money{
+    filter: drop-shadow(0.05vw 0.15vw 0.26vw rgba(0, 0, 0, 40));  /* Creates the drop shadow effect */
+    /*
+    The values are calculated based on:
+    - 90 degree angle and 3px distance: split into x and y components (2.12px each using trigonometry)
+    - 5px size
+    - 57% opacity (0.57)
+    - 10% spread is approximated in the overall effect
+    */
+}
+
+.player-hp-money-text{
+    margin-top: 0.1vw;
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
+    font-size: 1vw;
+
+}
+
+.player-hp-money{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    z-index: 2;
+    margin-right: 0.3vw;
+}
+
+.player-hp-money-icon{
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
+    font-size: 1vw;
+    margin-top: 0.1vw;
+
+}
+
+.player-hp-info{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.player-number-div{
+    position: relative;
+    margin-top: 0.3vw;
+    z-index: -1;
+    min-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: -1.7vw;
+    margin-left: -1vw;
+
+
+}
+
+.player-number-icon{
+
+    height: 4vw;
+    width: 4vw;
+    z-index: -1;
+    fill: rgba(var(--BACKGROUND_COLOR), 0.5);
+    filter: drop-shadow(0.05vw 0.15vw 0.26vw rgba(0, 0, 0, 40));
+    padding-left: -2vw;
+    /*stroke: white;
+    stroke-width: 0.8vw;
+
+    stroke-linejoin: round; */
+
+}
+
+.player-number-text{
+
+    z-index: 1;
+    position: absolute;
+    top:0;
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
+    font-size: 1.3vw;
+    margin-top: 0.8vw;
+    margin-right: 0.6vw;
+}
+.player-master-div{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+
+}
+
+.player-defuser-icon{
+    position: absolute;
+    right: 0;
+    width: 2.7vw;
+    z-index: 3;
+}
+.player-observed-icon{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1vw;
+    height: 1vw;
+    z-index: 4;
+}
+
+.player-div{
+    position: relative;
 }

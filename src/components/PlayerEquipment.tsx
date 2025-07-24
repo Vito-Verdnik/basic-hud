@@ -1,7 +1,7 @@
 import './Player.css';
 import {Deagle} from './../assets/Weapons'
 import './PlayerEquipment.css';
-import { Flashbang, Molotov, HeGrenade, SmokeGrenade, IncGrenade } from './../assets/Equipment'
+import { Flashbang, HeGrenade, SmokeGrenade, IncGrenade } from './../assets/Equipment'
 export default function PlayerEquipment(props: any) {
 
 

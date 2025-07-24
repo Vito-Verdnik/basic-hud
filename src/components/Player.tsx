@@ -1,7 +1,7 @@
 import './Player.css'
-import {Ak47, Awp, Deagle} from './../assets/Weapons'
-import {Armor, Flashbang, Molotov, HeGrenade, SmokeGrenade, IncGrenade} from './../assets/Equipment'
-import {KirIcon, DeathIcon, CrosshairIcon} from './../assets/Stats'
+import {Awp} from './../assets/Weapons'
+import {Armor} from './../assets/Equipment'
+import {DeathIcon, CrosshairIcon, HealthIcon, PlayerNumberIcon, DefuserIcon, ObservedIcon} from './../assets/Stats'
 import KillsInRound from './KillsInRound.tsx'
 import PlayerEquipment from './PlayerEquipment.tsx'
 
@@ -14,6 +14,17 @@ export default function Player(props) {
 
 
     return (
+        <div className='player-div'  style={{height: `${actualHeight}px`, width: `calc(${actualWidth}px + 2.6vw)`}}>
+            <DefuserIcon className='player-defuser-icon' />
+            <ObservedIcon className='player-observed-icon' />
+        <div className='player-master-div'>
+            <div className='player-number-div'>
+                <PlayerNumberIcon className='player-number-icon' />
+                <span className='player-number-text'>1</span>
+            </div>
+
+
+
         <div className="player-main-div" style={{
             height: `${actualHeight}px`,
             width: `${actualWidth}px`,
@@ -76,10 +87,27 @@ export default function Player(props) {
                 width: `${actualWidth}px`,
                 borderRadius: '0 0 2.16% 2.16% / 0 0 32% 32%'
             }}>
-                <p>{hpHeight}</p>
+                <div className='player-hp-bar' style={{height: `${hpHeight}px`, width:`${30}%`}} />
+                <div className='player-hp-info' style={{height: `${hpHeight}px`}}>
+                    <div className='player-hp-indicator' style={{height: `${hpHeight}px`}}>
+                        <HealthIcon className='player-hp-indicator-icon' style={{height: `${hpHeight * 0.7}px`}}/>
+                        <span className='player-hp-indicator-text'>30</span>
+                    </div>
+                    <div className='player-hp-money' style={{height: `${hpHeight}px`, width:`${100}%`}}>
+                        <span className='player-hp-money-icon'>$</span>
+                        <span className='player-hp-money-text'>11000</span>
+
+                    </div>
+
+
+                </div>
+
+
             </div>
 
 
+        </div>
+        </div>
         </div>
     )
 }
