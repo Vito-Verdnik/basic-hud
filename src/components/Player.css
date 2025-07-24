@@ -1,11 +1,19 @@
 @import '../index.css';
 .player-main-div {
     background-color: rgba(var(--BACKGROUND_COLOR), 0.84);
+    background-image: url('../assets/images/ESZS_Pattern_Opacity.png');
+    background-repeat: repeat;
+    background-size: 40%;
+    /* ... other styles ... */
+    /*border: none; Remove the border */
+    /* outline: 0.2vw solid white;  Use outline instead */
+
 
 
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .player-top-div{
@@ -49,16 +57,23 @@
 }
 
 .player-middle-div{
-    background-color: transparent;
+    position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
+    width: 100%;
 }
 
-.player-middle-armor-div{
-    display:flex;
+/* Group kills and deaths next to armor */
+.player-middle-armor-div {
+    position: absolute;
+    display: flex;
     align-items: center;
+
+    order: 1;
 }
+
+
 
 .player-middle-armor{
     fill: rgba(var(--CT_COLOR), 1.0);
@@ -73,4 +88,79 @@
 .player-hp-div{
     background-color: rgb(var(--CT_COLOR));
 
+}
+
+/* Group kills and deaths together */
+.player-middle-kills-div {
+    position: absolute;
+    left: 9%; /* Adjust this percentage based on your needs */
+    display: flex;
+    align-items: center;
+    order: 2;
+}
+
+.player-middle-deaths-div {
+    position: absolute;
+    left: 21%;
+    display: flex;
+    align-items: center;
+    margin-left: 0.5vw;
+}
+
+
+
+.player-middle-kills-icon{
+
+    fill: rgba(var(--CT_COLOR), 1.0);
+}
+
+.player-middle-kills-count{
+    margin-left: 0.07vw;
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
+    font-size: 1vw;
+    color: rgba(var(--CT_COLOR), 1.0);
+    margin-top: 0.1vw;
+}
+
+.player-middle-deaths-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    order: 3;
+}
+
+.player-middle-deaths-icon{
+
+    fill: rgba(var(--CT_COLOR), 1.0);
+}
+
+.player-middle-deaths-count{
+    margin-left: 0.07vw;
+    font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
+    font-size: 1vw;
+    color: rgba(var(--CT_COLOR), 1.0);
+    margin-top: 0.1vw;
+}
+
+/* Center KIR */
+.player-middle-kir-div {
+    position: absolute;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    order: 4;
+}
+/* Place equipment on the far right */
+.player-middle-equipment-div {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5vw; /* Add some spacing from the right edge */
+}
+
+.player-middle-equipment-div{
+    order: 5;
 }

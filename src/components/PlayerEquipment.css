@@ -1,0 +1,42 @@
+@import '../index.css';
+
+
+.equipment-div-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.sidearm{
+    fill: white;
+    fill-opacity: 0.6;
+    margin-left: -0.27vw;
+
+}
+.incgrenade{
+    fill: white;
+    fill-opacity: 0.6;
+    margin-right: 0.15vw;
+}
+
+.smokegrenade{
+    fill: white;
+    fill-opacity: 0.6;
+    margin-left: 0.15vw;
+    margin-right: 0.15vw;
+}
+
+.hegrenade{
+    fill: white;
+    fill-opacity: 0.6;
+    margin-left: 0.15vw;
+    margin-right: 0.15vw;
+}
+
+.flashbang{
+    fill: white;
+    fill-opacity: 0.6;
+    margin-left: 0.15vw;
+
+}
