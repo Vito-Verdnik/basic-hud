@@ -1,4 +1,5 @@
 @import '../index.css';
+
 .player-main-div {
 
     background-color: rgba(var(--BACKGROUND_COLOR), 0.84);
@@ -9,12 +10,11 @@
     /*border: none; Remove the border */
     /* outline: 0.2vw solid white;  Use outline instead */
     /*outline: 0.2vw solid white;*/
-   /* box-shadow:
-         /*   0.2vw 0 0 white,   /* left */
+    /* box-shadow:
+          /*   0.2vw 0 0 white,   /* left */
     /*   0   -0.2vw 0 white, /* top */
     /*     0    0.2vw 0 white, /* bottom */
-        /*-0.01vw 0 0 white;/* left */
-
+    /*-0.01vw 0 0 white;/* left */
 
 
     display: flex;
@@ -24,10 +24,9 @@
     flex-grow: 0;
 
 
-
 }
 
-.player-top-div{
+.player-top-div {
     background-color: rgba(var(--BACKGROUND_COLOR), 0.88);
 
 
@@ -38,20 +37,19 @@
     justify-content: space-between;
 }
 
-.player-top-name{
+.player-top-name {
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     order: 1;
     text-align: left;
     padding-left: 0.45vw;
     margin-top: 0.2vw;
     color: rgba(var(--CT_COLOR), 1.0);
-    flex-shrink:2;
+    flex-shrink: 2;
     font-size: 0.95vw;
 }
 
 
-
-.player-top-weapon-div{
+.player-top-weapon-div {
     order: 2;
 
     width: 6vw;
@@ -63,11 +61,11 @@
 
 }
 
-.player-top-weapon{
+.player-top-weapon {
     object-fit: contain;
 }
 
-.player-middle-div{
+.player-middle-div {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -85,8 +83,7 @@
 }
 
 
-
-.player-middle-armor{
+.player-middle-armor {
     fill: rgba(var(--CT_COLOR), 1.0);
     object-fit: contain;
     width: 0.9vw;
@@ -96,7 +93,7 @@
     margin-bottom: 0.1vw;
 }
 
-.player-hp-div{
+.player-hp-div {
     background-color: rgba(var(--CT_COLOR), 0.5);
     position: relative;
     overflow: hidden;
@@ -122,13 +119,12 @@
 }
 
 
-
-.player-middle-kills-icon{
+.player-middle-kills-icon {
 
     fill: rgba(var(--CT_COLOR), 1.0);
 }
 
-.player-middle-kills-count{
+.player-middle-kills-count {
     margin-left: 0.07vw;
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     font-size: 1vw;
@@ -136,19 +132,19 @@
     margin-top: 0.1vw;
 }
 
-.player-middle-deaths-div{
+.player-middle-deaths-div {
     display: flex;
     flex-direction: row;
     align-items: center;
     order: 3;
 }
 
-.player-middle-deaths-icon{
+.player-middle-deaths-icon {
 
     fill: rgba(var(--CT_COLOR), 1.0);
 }
 
-.player-middle-deaths-count{
+.player-middle-deaths-count {
     margin-left: 0.07vw;
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     font-size: 1vw;
@@ -166,6 +162,7 @@
 
     order: 4;
 }
+
 /* Place equipment on the far right */
 .player-middle-equipment-div {
     position: absolute;
@@ -175,11 +172,11 @@
     margin-right: 0.5vw; /* Add some spacing from the right edge */
 }
 
-.player-middle-equipment-div{
+.player-middle-equipment-div {
     order: 5;
 }
 
-.player-hp-bar{
+.player-hp-bar {
     position: relative;
     left: 0;
     height: 100%;
@@ -187,7 +184,8 @@
     z-index: 1;
     flex-shrink: 0;
 }
-.player-hp-indicator{
+
+.player-hp-indicator {
     z-index: 2;
     display: flex;
     align-items: center;
@@ -197,21 +195,21 @@
     margin-left: 0.3vw;
 }
 
-.player-hp-indicator-text{
+.player-hp-indicator-text {
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     margin-top: 0.09vw;
     font-size: 1.2vw;
     margin-left: 0.3vw;
 }
 
-.player-hp-indicator-icon{
+.player-hp-indicator-icon {
     fill: white;
 }
 
 .player-hp-indicator-icon,
 .player-hp-indicator-text,
-.player-hp-money{
-    filter: drop-shadow(0.05vw 0.15vw 0.26vw rgba(0, 0, 0, 40));  /* Creates the drop shadow effect */
+.player-hp-money {
+    filter: drop-shadow(0.05vw 0.15vw 0.26vw rgba(0, 0, 0, 40)); /* Creates the drop shadow effect */
     /*
     The values are calculated based on:
     - 90 degree angle and 3px distance: split into x and y components (2.12px each using trigonometry)
@@ -221,14 +219,14 @@
     */
 }
 
-.player-hp-money-text{
+.player-hp-money-text {
     margin-top: 0.1vw;
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     font-size: 1vw;
 
 }
 
-.player-hp-money{
+.player-hp-money {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -236,16 +234,16 @@
     margin-right: 0.3vw;
 }
 
-.player-hp-money-icon{
+.player-hp-money-icon {
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     font-size: 1vw;
     margin-top: 0.1vw;
 
 }
 
-.player-hp-info{
+.player-hp-info {
     position: absolute;
-    top:0;
+    top: 0;
     left: 0;
     width: 100%;
     height: 100%;
@@ -256,7 +254,7 @@
     z-index: 2;
 }
 
-.player-number-div{
+.player-number-div {
     position: relative;
     margin-top: 0.3vw;
     z-index: -1;
@@ -273,7 +271,7 @@
 
 }
 
-.player-number-icon{
+.player-number-icon {
 
     height: 4vw;
     width: 4vw;
@@ -288,17 +286,18 @@
 
 }
 
-.player-number-text{
+.player-number-text {
 
     z-index: 1;
     position: absolute;
-    top:0;
+    top: 0;
     font-family: 'MonumentExtended-Regular', "Comic Sans MS", sans-serif;
     font-size: 1.3vw;
     margin-top: 0.8vw;
     margin-right: 0.6vw;
 }
-.player-master-div{
+
+.player-master-div {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -309,13 +308,14 @@
 
 }
 
-.player-defuser-icon{
+.player-defuser-icon {
     position: absolute;
     right: 0;
     width: 2.7vw;
     z-index: 3;
 }
-.player-observed-icon{
+
+.player-observed-icon {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -324,6 +324,6 @@
     z-index: 4;
 }
 
-.player-div{
+.player-div {
     position: relative;
 }
