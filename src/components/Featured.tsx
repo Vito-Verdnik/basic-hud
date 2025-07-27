@@ -67,7 +67,9 @@ let name = 'Mlady Swagalot';
                 </div>
 
                 <div className='featured-main-util-div'>
-                    <FeaturedEquipment />
+                    <FeaturedEquipment
+                        numbers = {false}
+                    />
                 </div>
             </div>
 

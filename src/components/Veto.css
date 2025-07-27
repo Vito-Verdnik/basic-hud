@@ -6,13 +6,13 @@
     background-color: rgba(var(--BACKGROUND_COLOR), 0.88);
     top: 0;
     left: 0.7%;
-    width: 20.3vw;
+    width: 20.1vw;
     height: 3.15vw;
     display: flex;
     flex-flow: row;
     align-items: center;
     justify-content: space-around;
-    border-radius: 0 0 0.7vw 0.7vw;
+    border-radius: 0 0 0.5vw 0.5vw;
 }
 
 .veto-div{

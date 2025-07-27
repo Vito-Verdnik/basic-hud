@@ -6,29 +6,69 @@
     align-items: center;
     gap: 0.8vw;
     fill: rgba(255, 255, 255, 0.7);
-    width: 8vw;
 }
 
 .featured-equipment-flashbang{
-    height: 100%;
-    order: 4;
+    height: 95%;
+    width: auto;
+
     fill: rgba(255, 255, 255, 0.7);
 }
 
 .featured-equipment-smokegrenade{
-    height: 100%;
-    order: 1;
+    height: 95%;
+    width: auto;
     fill: rgba(255, 255, 255, 0.7);
 }
 
 .featured-equipment-hegrenade{
-    height: 100%;
-    order: 3;
+    height: 95%;
+    width: auto;
     fill: rgba(255, 255, 255, 0.7);
 }
 
 .featured-equipment-incgrenade{
-    height: 100%;
-    order: 0;
+    height: 95%;
+    width: auto;
     fill: rgba(255, 255, 255, 0.7);
+}
+
+.featured-equipment-flashbang, .featured-equipment-smokegrenade, .featured-equipment-hegrenade, .featured-equipment-incgrenade{
+    order: 1;
+}
+
+.number-flashbang, .number-smokegrenade, .number-hegrenade, .number-incgrenade{
+    font-family: 'Poppins-Bold', "Comic Sans MS", sans-serif;
+    font-size: 1.3vw;
+    color: white;
+    text-align: center;
+    margin-top: 0.15vw;
+
+
+    order: 0;
+
+}
+
+.featured-equipment-flashbang-div, .featured-equipment-smokegrenade-div, .featured-equipment-hegrenade-div, .featured-equipment-incgrenade-div{
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.15vw;
+
+}
+
+.featured-equipment-flashbang-div{
+    order: 4
+}
+.featured-equipment-smokegrenade-div{
+    order: 1
+}
+.featured-equipment-hegrenade-div{
+    order: 2
+}
+.featured-equipment-incgrenade-div{
+    order: 0
 }

@@ -3,6 +3,8 @@ import Player from './components/Player.tsx'
 import Featured from './components/Featured.tsx'
 import Veto from './components/Veto.tsx'
 import './App.css'
+import TeamUtil from './components/TeamUtil.tsx'
+import Sponsor from './components/Sponsor.tsx'
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
 
         <Featured />
         <Veto />
+        <TeamUtil />
+        <Sponsor />
 
     </>
   )
