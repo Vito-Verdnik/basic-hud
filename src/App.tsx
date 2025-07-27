@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Player from './components/Player.tsx'
+import Featured from './components/Featured.tsx'
 import './App.css'
 
 function App() {
@@ -14,7 +15,9 @@ function App() {
         <Player
             SCREENWIDTH={SCREENWIDTH}
             SCREENHEIGHT={SCREENHEIGHT}
-            />
+        />
+
+        <Featured />
 
     </>
   )
@@ -45,3 +48,11 @@ function useWindowDimensions() {
 
     return windowDimensions;
 }
+
+
+/*
+        <Player
+            SCREENWIDTH={SCREENWIDTH}
+            SCREENHEIGHT={SCREENHEIGHT}
+            />
+ */

@@ -65,7 +65,9 @@ export default function Player(props) {
 
                         <div className="player-middle-equipment-div" style={{height: `${middleHeight}px`}}>
                             <PlayerEquipment
-                                height={middleHeight}/></div>
+                                sidearm={true}
+                                height={middleHeight}/>
+                        </div>
 
                         <div className="player-middle-deaths-div" style={{height: `${middleHeight}px`}}>
                             <DeathIcon

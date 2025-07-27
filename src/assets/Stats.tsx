@@ -5,5 +5,5 @@ import HealthIcon from './stats/Non_Orig_Health_Icon.svg?react';
 import PlayerNumberIcon from './stats/SideNumber.svg?react';
 import ObservedIcon from './stats/Non_Orig_Observed.svg?react';
 import DefuserIcon from './stats/Non_Orig_Defuser.svg?react';
-
-export { CrosshairIcon, DeathIcon, KirIcon, HealthIcon, PlayerNumberIcon, ObservedIcon, DefuserIcon };
+import BulletIcon from './stats/Non-Orig-Bullet.svg?react';
+export { CrosshairIcon, DeathIcon, KirIcon, HealthIcon, PlayerNumberIcon, ObservedIcon, DefuserIcon, BulletIcon };
