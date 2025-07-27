@@ -11,6 +11,7 @@ export default function Player(props) {
     const topHeight = Math.round(actualHeight * 0.35556);
     const hpHeight = Math.round(actualHeight * 0.27778);
     const middleHeight = actualHeight - topHeight - hpHeight
+    //TODO: GTFO S TEM ACTUAL WIDTH, UPORABI VW IDIOT
 
 
     return (
