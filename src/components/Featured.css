@@ -271,7 +271,7 @@
     padding-left: 1.42vw;
     padding-right: 1.42vw;
     transform-origin: center center; /* Add this to make it expand from center */
-    z-index: -1;
+    z-index: -2;
 }
 
 .featured-name-text{
@@ -281,7 +281,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin-top: 0.1vw;
+    margin-bottom: 0.1vw;
+    z-index: -1;
+    filter: drop-shadow(0 0.21vw 0.26vw rgba(0, 0, 0, 0.9));
 }
 
 
@@ -289,12 +291,12 @@
     box-sizing: border-box;
     background-color: rgba(var(--BACKGROUND_COLOR), 0.9);
     position: absolute;
-    top: 0;
+    top: 1%;
     left: 80%;
     width: 1.9vw;
-    height: 1.4vw;
+    height: 1.46vw;
     border-radius: 0.65vw 0.65vw 0 0;
-    padding: 0.15vw;
-    z-index: -1;
+    padding: 0.12vw 0.18vw 0.18vw;
+    z-index: -2;
 
 }

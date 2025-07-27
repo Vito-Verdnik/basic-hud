@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Player from './components/Player.tsx'
 import Featured from './components/Featured.tsx'
+import Veto from './components/Veto.tsx'
 import './App.css'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         />
 
         <Featured />
+        <Veto />
 
     </>
   )

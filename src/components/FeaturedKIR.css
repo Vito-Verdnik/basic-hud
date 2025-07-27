@@ -13,12 +13,12 @@
 
     width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: -1;
 
 }
 
 .featured-kir-count {
-    z-index: 2;
+    z-index: -1;
     font-family: 'Poppins-Bold', "Comic Sans MS", sans-serif;
     font-size: 0.8vw;
     width: 100%;
@@ -38,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 2;
+    z-index: -1;
 }
 
 .featured-kir-icon-container {
@@ -47,7 +47,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: -1;
     width: 100%;
     height: 100%;
 
