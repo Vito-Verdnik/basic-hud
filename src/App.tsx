@@ -5,7 +5,7 @@ import Veto from './components/Veto.tsx'
 import './App.css'
 import TeamUtil from './components/TeamUtil.tsx'
 import Sponsor from './components/Sponsor.tsx'
-
+import Scoreboard from './components/Scoreboard.tsx'
 function App() {
 
     const { SCREENHEIGHT, SCREENWIDTH } = useWindowDimensions();
@@ -24,6 +24,7 @@ function App() {
         <Veto />
         <TeamUtil />
         <Sponsor />
+        <Scoreboard />
 
     </>
   )
