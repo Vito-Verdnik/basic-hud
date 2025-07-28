@@ -1,4 +1,4 @@
-import './Player.css';
+import './Player2.css';
 import {KirIcon} from './../assets/Stats';
 import './KiR.css';
 

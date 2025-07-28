@@ -5,11 +5,17 @@
     box-sizing: border-box;
     position: fixed;
     background-color: rgba(var(--BACKGROUND_COLOR), 0.88);
-    top: 30%;
-    left:5%;
+    top: 49%;
     width: 12.1vw;
     height: 2.55vw;
     border-radius: 0.9vw;
     outline: 0.07vw rgba(255,255,255, 0.2) solid;
     padding: 0.5vw;
+}
+
+.team-util-div.ct{
+    left:5.5%;
+}
+.team-util-div.t{
+    right:5.5%;
 }

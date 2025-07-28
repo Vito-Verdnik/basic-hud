@@ -15,7 +15,7 @@ export default function Scoreboard(props: any) {
     let round = 13;
     let stage = 'GRAND FINALE'
     let nameLeft = 'SF'
-    let nameRight = 'TS'
+    let nameRight = 'TSE'
     let sideLeft = 'ct'
     let sideRight = 't'
 
