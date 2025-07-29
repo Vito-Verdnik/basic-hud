@@ -14,7 +14,7 @@
     position: absolute;
     bottom:0;
     left: 0;
-    background-color: rgba(var(--BACKGROUND_COLOR), 0.7);
+    background-color: rgba(var(--BACKGROUND_COLOR), 1);
     height: 3.8vw;
     width: 31vw;
     border-radius: 1vw;
@@ -23,7 +23,7 @@
     background-size: 30%;
     Z-index: 1;
     filter: drop-shadow(0 0.3vw 0.3vw rgba(0, 0, 0, 0.6));
-    backdrop-filter: brightness(0);
+    /*backdrop-filter: brightness(0);*/
 }
 
 

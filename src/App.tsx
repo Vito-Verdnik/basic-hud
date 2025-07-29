@@ -22,16 +22,16 @@ function App() {
         <TeamUtil side={'t'}/>
         <Sponsor />
         <Scoreboard />
-        <Player2 side={'ct'} left={12} top={58.5} alive={true} />
-        <Player2 side={'t'} left={88.2} top={58.5} alive={true} observed={true}/>
-        <Player2 side={'ct'} left={12} top={94.5} alive={true} />
-        <Player2 side={'ct'} left={12} top={85.5} alive={false} />
-        <Player2 side={'ct'} left={12} top={76.5} alive={false} />
-        <Player2 side={'ct'} left={12} top={67.5} alive={true} />
-        <Player2 side={'t'} left={88.2} top={94.5} alive={true} />
-        <Player2 side={'t'} left={88.2} top={85.5} alive={false} />
-        <Player2 side={'t'} left={88.2} top={76.5} alive={false} />
-        <Player2 side={'t'} left={88.2} top={67.5} alive={true} />
+        <Player2 position={'l'} side={'ct'} offset={2} top={32.8} alive={true} />
+        <Player2 position={'r'}  side={'t'} offset={2} top={32.8} alive={true} observed={true}/>
+        <Player2 position={'l'} side={'ct'} offset={2} top={38} alive={true} />
+        <Player2 position={'l'} side={'ct'} offset={2} top={43.2} alive={false} />
+        <Player2 position={'l'} side={'ct'} offset={2} top={48.4} alive={false} />
+        <Player2 position={'l'} side={'ct'} offset={2} top={53.6} alive={true} />
+        <Player2 position={'r'} side={'t'} offset={2} top={38} alive={true} />
+        <Player2 position={'r'}  side={'t'} offset={2} top={43.2} alive={false} />
+        <Player2 position={'r'}  side={'t'} offset={2} top={48.4} alive={false} />
+        <Player2 position={'r'}  side={'t'} offset={2} top={53.6} alive={true} />
 
 
 

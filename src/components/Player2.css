@@ -4,8 +4,11 @@
 
     width: 19.5vw;
     height: 4.8vw;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+
 }
+
+
 
 
 
@@ -26,11 +29,11 @@
 
 
 }
-.player-main-div.ct{
+.player-main-div.l{
     left: 0;
 }
 
-.player-main-div.t{
+.player-main-div.r{
     right: 0;
 }
 
@@ -78,25 +81,36 @@
 }
 
 .player-top-name.ct{
-    text-align: left;
+
     color: rgba(var(--CT_COLOR), 1.0);
+
+}
+.player-top-name.l{
+    text-align: left;
     order: 1;
+}
+.player-top-name.r{
+    order: 2;
+    text-align: right;
 }
 
 .player-top-name.t{
-    text-align: right;
+
     color: rgba(var(--T_COLOR), 1.0);
-    order: 2;
 }
 .player-top-name.dead.ct{
     color: rgba(var(--CT_COLOR), 0.73);
-    order: 1;
 }
 
 .player-top-name.dead.t{
     color: rgba(var(--T_COLOR), 0.73);
-    order: 2;
+
 }
+
+.player-top-name.dead.l{
+    order: 1;
+}
+.player-top-name.dead.r{order: 2;}
 
 .player-top-primary{
     margin-top: 0.15vw;
@@ -108,11 +122,11 @@
 
 }
 
-.player-top-primary.ct{
+.player-top-primary.l{
     order: 2;
 }
 
-.player-top-primary.t{
+.player-top-primary.r{
     order: 1;
     transform: scaleX(-1);
 }
@@ -137,14 +151,21 @@
 }
 
 .player-middle-armor-icon.ct{
-    left: 5%;
+
     fill: rgba(var(--CT_COLOR), 1.0);
+}
+.player-middle-armor-icon.r{
+    left: 95%;
+}
+.player-middle-armor-icon.l{
+    left: 5%;
 }
 
 .player-middle-armor-icon.t{
-    left: 95%;
+
     fill: rgba(var(--T_COLOR), 1.0);
 }
+.player-middle-armor-icon.r{left: 95%;}
 
 .player-middle-kills{
     display: flex;
@@ -161,18 +182,18 @@
 
 }
 
-.player-middle-kills.ct{
+.player-middle-kills.l{
     left: 11%;
 }
-.player-middle-kills.t{
+.player-middle-kills.r{
 
     right: 28%;
 }
 
-.player-middle-kills.dead.ct{
+.player-middle-kills.dead.l{
     left: 3.5%;
 }
-.player-middle-kills.dead.t{
+.player-middle-kills.dead.r{
 
     right: 33%;
 }
@@ -234,19 +255,19 @@
     transform: translateY(-50%);
 }
 
-.player-middle-deaths.ct{
+.player-middle-deaths.l{
 
     left: 28%;
 }
-.player-middle-deaths.t{
+.player-middle-deaths.r{
     right: 11%;
 
 }
 
-.player-middle-deaths.dead.ct{
+.player-middle-deaths.dead.l{
     left: 33%;
 }
-.player-middle-deaths.dead.t{
+.player-middle-deaths.dead.r{
     right: 3.5%
 }
 
@@ -278,17 +299,17 @@
 
     transform: translate(-50%, -50%);
 }
-.player-middle-kir-container.ct{
+.player-middle-kir-container.l{
     left: 47%;
 }
-.player-middle-kir-container.t{
+.player-middle-kir-container.r{
     left: 53%;
 }
 
-.player-middle-kir-container.dead.ct{
+.player-middle-kir-container.dead.l{
     left: 68%;
 }
-.player-middle-kir-container.dead.t{
+.player-middle-kir-container.dead.r{
     left: 22%;
 }
 .player-middle-kir{
@@ -310,12 +331,12 @@
 
 }
 
-.player-middle-equipment-container.ct{
+.player-middle-equipment-container.l{
     right: 0;
     padding-right: 0.4vw;
     justify-content: end;
 }
-.player-middle-equipment-container.t{
+.player-middle-equipment-container.r{
     left: 1.5%;
     padding-left: 0.4vw;
     justify-content: start;
@@ -348,6 +369,9 @@
 }
 .player-bottom-div.dead.t{
     background-color: rgba(var(--T_COLOR), 0);
+
+}
+.player-bottom-div.dead.r{
     justify-content: end;
 }
 
@@ -362,10 +386,16 @@
 }
 .player-bottom-bar.ct{
     background-color: rgba(var(--CT_COLOR), 1);
+
+}
+.player-bottom-bar.l{
     left: 0;
 }
 .player-bottom-bar.t{
     background-color: rgba(var(--T_COLOR), 1);
+
+}
+.player-bottom-bar.r{
     right: 0;
 }
 
@@ -379,16 +409,24 @@
 }
 .player-bottom-money.ct{
     padding-right: 0.4vw;
+
+}
+.player-bottom-money.l{
     order: 2;
+}
+
+.player-bottom-money.r{
+    order: 1;
+
 }
 .player-bottom-money.t{
     padding-left: 0.4vw;
-    order: 1;
+
 }
-.player-bottom-money.dead.ct{
+.player-bottom-money.dead.l{
     padding-left: 0.4vw;
 }
-.player-bottom-money.dead.t{
+.player-bottom-money.dead.r{
     padding-right: 0.4vw;
 }
 .player-bottom-money-text{
@@ -401,10 +439,10 @@
     line-height: 1;
     filter: drop-shadow(0 0.21vw 0.26vw rgba(0, 0, 0, 0.9));
 }
-.player-bottom-money-text.ct{
+.player-bottom-money-text.l{
     text-align: right;
 }
-.player-bottom-money-text.t{
+.player-bottom-money-text.r{
     text-align: left
 }
 .player-bottom-money-text.dead{
@@ -428,8 +466,8 @@
     color: white;
     filter: drop-shadow(0 0.21vw 0.26vw rgba(0, 0, 0, 0.9));
 }
-.player-bottom-hp-text.ct{text-align: left;}
-.player-bottom-hp-text.t{text-align: right;}
+.player-bottom-hp-text.l{text-align: left;}
+.player-bottom-hp-text.r{text-align: right;}
 .player-bottom-hp{
     width: fit-content;
     height: fit-content;
@@ -441,10 +479,10 @@
     align-items: center;
 
 }
-.player-bottom-hp.ct{padding-left: 0.4vw;
+.player-bottom-hp.l{padding-left: 0.4vw;
     order: 1;
 }
-.player-bottom-hp.t{padding-right: 0.4vw;
+.player-bottom-hp.r{padding-right: 0.4vw;
     order: 2;
 }
 
@@ -462,15 +500,21 @@
 
 }
 .player-bottom-dmg-container.ct{
+
+    color: rgba(var(--CT_COLOR), 0.73);
+}
+.player-bottom-dmg-container.l{
     right: 2%;
     justify-content: end;
     padding-right: 0.4vw;
-    color: rgba(var(--CT_COLOR), 0.73);
 }
-.player-bottom-dmg-container.t{
+.player-bottom-dmg-container.r{
     left: 2%;
     justify-content: start;
     padding-left: 0.4vw;
+}
+.player-bottom-dmg-container.t{
+
     color: rgba(var(--T_COLOR), 0.73);
 }
 
@@ -485,8 +529,8 @@
     font-size: 1vw;
 
 }
-.player-bottom-dmg-text.ct{text-align: left;}
-.player-bottom-dmg-text.t{text-align: left;}
+.player-bottom-dmg-text.l{text-align: left;}
+.player-bottom-dmg-text.r{text-align: left;}
 
 
 .player-number-icon{
@@ -499,8 +543,8 @@
     z-index: -1;
     fill: rgba(var(--BACKGROUND_COLOR), 0.7);
 }
-.player-number-icon.ct{left: -1.7%;}
-.player-number-icon.t{left: 101.7%; transform: translate(-50%, -50%) scaleX(-1);}
+.player-number-icon.l{left: -1.7%;}
+.player-number-icon.r{left: 101.7%; transform: translate(-50%, -50%) scaleX(-1);}
 
 .player-number-text{
     position: absolute;
@@ -515,8 +559,8 @@
     color: rgba(255,255,255, 0.8);
 
 }
-.player-number-text.ct{left: -3.3%;}
-.player-number-text.t{left: 103.3%;}
+.player-number-text.l{left: -3.3%;}
+.player-number-text.r{left: 103.3%;}
 
 .player-observed-div{
     position: absolute;
@@ -527,8 +571,8 @@
 
 
 }
-.player-observed-div.ct{left: -7%;}
-.player-observed-div.t{right: -7%;}
+.player-observed-div.l{left: -7%;}
+.player-observed-div.r{right: -7%;}
 
 .player-observed-icon{
     height: 100%;

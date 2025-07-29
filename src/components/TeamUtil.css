@@ -5,7 +5,7 @@
     box-sizing: border-box;
     position: fixed;
     background-color: rgba(var(--BACKGROUND_COLOR), 0.88);
-    top: 49%;
+    top: 27.6vw;
     width: 12.1vw;
     height: 2.55vw;
     border-radius: 0.9vw;
@@ -14,8 +14,8 @@
 }
 
 .team-util-div.ct{
-    left:5.5%;
+    left:5.5vw;
 }
 .team-util-div.t{
-    right:5.5%;
+    right:5.5vw;
 }

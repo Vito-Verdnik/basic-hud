@@ -2,7 +2,6 @@ import './BetterEquipment.css'
 import {Flashbang, IncGrenade, HeGrenade, SmokeGrenade} from '../assets/Equipment.tsx'
 import {Deagle} from "../assets/Weapons.tsx";
 
-// First, define the props interface
 interface FeaturedEquipmentProps {
     numbers?: boolean;
     fillColor?: string;
