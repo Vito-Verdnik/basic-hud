@@ -27,7 +27,7 @@ export default function Player2(props) {
             <div className={`player-main-div ${position} ${side} ${!alive ? 'dead' : ''} ${observed ? 'observed' : ''}`}>
                 <div className={`player-top-div ${position} ${side} ${!alive ? 'dead' : ''}`}>
                     <span className={`player-top-name ${position}  ${side} ${!alive ? 'dead' : ''}`}>{name}</span>
-                    {alive && (<Ak47 className={`player-top-primary ${side}`}/>)}
+                    {alive && (<Ak47 className={`player-top-primary ${position} ${side}`}/>)}
                 </div>
 
                 <div className={`player-middle-div ${position} ${side}`}>
