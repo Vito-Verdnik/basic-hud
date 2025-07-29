@@ -8,8 +8,6 @@ import Scoreboard from './components/Scoreboard.tsx'
 import Player2 from './components/Player2.tsx'
 function App() {
 
-//TODO: use vw instead of percentages for positioning
-    //TODO: rewrite t-ct variation in players so it makes sense positioning wise
 
 
   return (
