@@ -6,6 +6,9 @@ import TeamUtil from './components/TeamUtil.tsx'
 import Sponsor from './components/Sponsor.tsx'
 import Scoreboard from './components/Scoreboard.tsx'
 import Player2 from './components/Player2.tsx'
+import VideoTest from './components/VideoTest.tsx'
+import BombProgress from "./components/BombProgress.tsx";
+
 function App() {
 
 
@@ -30,7 +33,8 @@ function App() {
         <Player2 position={'r'}  side={'t'} offset={2} top={43.2} alive={false} />
         <Player2 position={'r'}  side={'t'} offset={2} top={48.4} alive={false} />
         <Player2 position={'r'}  side={'t'} offset={2} top={53.6} alive={true} />
-
+      <VideoTest />
+        <BombProgress />
 
 
 

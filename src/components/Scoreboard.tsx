@@ -1,7 +1,7 @@
 import './Scoreboard.css'
 import SF_LOGO from '../assets/images/SF_Logo.png'
 import TS_LOGO from '../assets/images/TS_Logo.png'
-import SDP_LOGO from '../assets/images/SDP_Logo.png'
+import SDP_LOGO from '../assets/images/SDP_LOGO.png'
 import BesfOfScore from "./BesfOfScore.tsx";
 
 

@@ -8,6 +8,7 @@
     transform: translateX(-50%);
     width: 31VW;
     height: 5.5VW;
+    z-index: 1;
 }
 
 .scoreboard-div-main {

@@ -1,0 +1,30 @@
+@import '../index.css';
+
+.bomb-progress-container {
+    position: fixed;
+    top: 18.2%;
+    left: 50%;
+    border-radius: 5px;
+    height: 38px;
+    width: 200px;
+    transform: translate(-50%, -50%);
+    background-color: rgb(77, 0, 0);
+    overflow: hidden;
+}
+
+.bomb-progress-bar{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+
+}
+
+.bomb-progress-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins-Bold', "Comic Sans MS", sans-serif;
+    color: white;
+    font-size: 1vw;
+}
